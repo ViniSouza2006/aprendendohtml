@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Tabelas</title>
+</head>
+<body>
+    <table border="1"> <!-- Incrementado na tag table. Border = "Borda" -->  
+            <td></td>     
+            <th>Cod</th><!--Cabeçalho da tabela Th="Table header" -->
+            <th>Produto</th>
+            <th>Valor</th>
+        <tr> <!-- Abertura da Primeira "Linha" Tr = "Linha" -->
+            <td rowspan="4">produtos</td>
+            <td>1</td> <!-- Primeiro dado Td= "Table Data" -->
+            <td>Arroz</td>
+            <td>R$5,00</td>
+        </tr> <!--Fechamento da linha-->
+
+        <tr> <!-- Abertura da Segunda "Linha" -->
+            <td>2</td>
+            <td>Feijão</td>
+            <td>R$3,00</td>
+        </tr>
+
+        <tr> <!-- Abertura da Terceira "Linha" -->
+            <td>3</td>
+            <td>Salada</td>
+            <td>R$2,00</td>
+        </tr>
+
+        <tr> <!-- Abertura da Quarta "Linha" -->
+            <td>4</td>
+            <td>Proteína</td>
+            <td>R$10,00</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td colspan="2">Total</td> <!-- Colspan o dado passara a ocupar dois espaços -->
+            <td>R$15,00</td>
+        </tr>
+    </table>
+</body>
+</html>
