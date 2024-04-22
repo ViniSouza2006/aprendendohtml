@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form oninput="output.value = (val1.valueAsNumber || 0) + (val2.valueAsNumber || 0)" id=foo>
+        <input type=number name=val1> x 
+        <input type=number name=val2> =
+        <output name=output for="val1 val2" form=foo>0</output>
+    </form>
+</body>
+</html>
