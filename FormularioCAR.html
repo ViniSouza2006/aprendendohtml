@@ -5,17 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <style>
-         .formulario{
+         .CampoForm{
             width: 20%;
+            
+        }
+        header{
+            width: 100%;
+            padding: auto;
+            margin: auto;
+            background-color: rgb(30, 31, 32);
+        }
+        nav{
+            width: 100%;
+            padding: auto;
+            margin: auto;
+            color: antiquewhite;
+            background-color: black;
+        }
+        footer{
+            width: 100%;
+            margin: auto;
+            padding: auto;
+            background-color: rgb(30, 31, 32);
         }
     </style>
 </head>
+<nav>
 <body>
+    <header>
     <h1>Página de Login</h1>
     <hr>
-    <fieldset class="formulario">
+    </header>
+    
+    <fieldset class="CampoForm">
         <legend><strong>Informações</strong></legend>
-    <Form>
+    <Form class="formulario">
         <label>Nome: </label>
         <input type="text" required placeholder="Digite seu nome" >
         <br>
@@ -43,7 +67,7 @@
         </fieldset>
             <br>
             <br>
-        <fieldset class="formulario">
+        <fieldset class="CampoForm">
         <legend><strong>Informações de Localização</strong></legend>
         <label>Cidade: </label>
         <input type="text" >
@@ -59,6 +83,10 @@
     </Form>
     
     <input type="submit">
-
+   
 </body>
+</nav>
+<footer>
+
+</footer>
 </html>
