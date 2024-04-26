@@ -5,84 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            color: rgb(255, 255, 255);
+        }
+        .Formulario{
+            margin-left: auto;
+            margin-right: auto;
+        }
          .CampoForm{
-            width: 20%;
-        }
-        header{
-            width: 100%;
-            margin: 0;
-            background-color: rgb(30, 31, 32);
-        }
-        nav{
-            width: 100%;
-            margin: 0;
-            color: antiquewhite;
+            background-color: rgb(34, 36, 36);
+            padding: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+         }
+         #Corpo{
+
+            background: rgb(22, 29, 36);
+         }
+         header{
+            color: white;
             background-color: black;
+            height: 100px;
+            text-align: center;
         }
-        footer{
-            width: 100%;
-            margin: 0
-            background-color: rgb(30, 31, 32);
+        #logo{
+            float: left;
+            padding-left: 2%;
+            padding-top: 2%;
+        }
+        #conta{
+            float: right;
+            padding-right: 2%;
+            padding-top: 3%;
+        }
+        #Envio{
+            color: white;
+            background-color: rgb(43, 42, 42);
         }
     </style>
-</head>
-<nav>
-<body>
     <header>
-    <h1>Página de Login</h1>
-    <hr>
-    </header>
-    
-    <fieldset class="CampoForm">
-        <legend><strong>Informações</strong></legend>
-    <Form class="formulario">
-        <label>Nome: </label>
-        <input type="text" required placeholder="Digite seu nome" >
-        <br>
-        <br>
-        <label>Sobrenome: </label>
-        <input type="text" required placeholder="Digite seu nome" >
-        <br>
-        <br>
-        <label>Idade: </label>
-        <input type="" required min="18" placeholder="Insira sua Idade (Min 18+)">
-        <br>
-        <br>
-        <label>CPF: </label>
-        <input type="number" min="11" placeholder="ex: 000.000.000-00" >
-        <br>
-        <br>
-        <label>RG: </label>
-        <input type="number" min="" placeholder="ex: 00.000.000-XX" >
-        <br>
-        <br>
-        <label>Email: </label>
-        <input type="email" min="" placeholder="Usuario001@Gmail.com">
-        <br>
-        <br>
-        </fieldset>
-            <br>
-            <br>
+        <h1 id="logo">AutomotiveDistrict</h1>
+</header>
+</head>
+<main>
+    <body id="Corpo">
         <fieldset class="CampoForm">
-        <legend><strong>Informações de Localização</strong></legend>
-        <label>Cidade: </label>
-        <input type="text" >
-        <br>
-        <br>
-        <label>Bairro: </label>
-        <input type="text" >
-        <br>
-        <br>
-        <label>Rua: </label>
-        <input type="text" >
-    </fieldset>
-    </Form>
-    
-    <input type="submit">
-   
-</body>
-</nav>
-<footer>
-
-</footer>
+            <legend>Informações</legend>
+        <Form class="Formulario">
+            <label>Nome: </label><br>
+            <input type="text" required placeholder="Digite seu nome" >
+            <br>
+            <br>
+            <label>Sobrenome: </label><br>
+            <input type="text" required placeholder="Digite seu nome" >
+            <br>
+            <br>
+            <label>Idade: </label><br>
+            <input type="number" required min="18" placeholder="Insira sua Idade (Min 18+)">
+            <br>
+            <br>
+            <label>CPF: </label><br>
+            <input type="number" placeholder="ex: 000.000.000-00">
+            <br>
+            <br>
+            <label>RG: </label><br>
+            <input type="number" placeholder="ex: 00.000.000-00">
+            <br>
+            <br>
+            <label>Email: </label><br>
+            <input type="email" placeholder="Usuario001@Gmail.com">
+            <br>
+            <br>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset class="CampoForm">
+            <legend>Informações de Localização</legend>
+            <label>Cidade: </label><br>
+            <input type="text" placeholder="Ex: São Paulo">
+            <br>
+            <br>
+            <label>Bairro: </label><br>
+            <input type="text" placeholder="EX: Vila Olímpia">
+            <br>
+            <br>
+            <label>Rua: </label><br>
+            <input type="text" placeholder="Ex: Rua Júlio Diniz"><br>
+            <br>
+            <br>
+            <input id="Envio" type="submit">
+            </fieldset>
+            </Form>
+            
+    </body>
+</main>
 </html>
